@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
-import { UtilitiesComponent } from './utilities.component';
 
 @NgModule({
-  declarations: [UtilitiesComponent],
-  imports: [
-  ],
-  exports: [UtilitiesComponent]
+  declarations: [],
+  imports: [],
+  exports: []
 })
-export class UtilitiesModule { }
+export class UtilitiesModule {}

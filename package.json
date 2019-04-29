@@ -9,7 +9,8 @@
     "test:watch": "ng test --code-coverage --progress=false --watch",
     "format:fix": "pretty-quick --staged",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:packagr": "npm run build @themartiangeeks/securities && npm run build @themartiangeeks/utilities"
   },
   "husky": {
     "hooks": {
