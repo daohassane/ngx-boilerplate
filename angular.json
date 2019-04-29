@@ -22,7 +22,11 @@
             "main": "projects/core/src/main.ts",
             "polyfills": "projects/core/src/polyfills.ts",
             "tsConfig": "projects/core/tsconfig.app.json",
-            "assets": ["projects/core/src/favicon.ico", "projects/core/src/assets"],
+            "assets": [
+              "projects/core/src/favicon.ico",
+              "projects/core/src/assets",
+              "projects/core/src/manifest.json"
+            ],
             "styles": ["themes/app.scss"],
             "scripts": [],
             "es5BrowserSupport": true
@@ -50,7 +54,9 @@
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "projects/core/ngsw-config.json"
             }
           }
         },
@@ -80,7 +86,11 @@
             "karmaConfig": "projects/core/karma.conf.js",
             "styles": ["projects/core/src/styles.scss"],
             "scripts": [],
-            "assets": ["projects/core/src/favicon.ico", "projects/core/src/assets"]
+            "assets": [
+              "projects/core/src/favicon.ico",
+              "projects/core/src/assets",
+              "projects/core/src/manifest.json"
+            ]
           }
         },
         "lint": {
@@ -157,7 +167,7 @@
           }
         }
       }
-    },
+    }
   },
   "defaultProject": "core"
 }

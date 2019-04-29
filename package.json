@@ -13,7 +13,10 @@
     "link-upstream": "git remote add upstream git@github.com:TheMartianGeeks/ngx-boilerplate.git",
     "sync": "git fetch && git checkout master && git merge upstream/master && git push",
     "reset": "rm -rf ./node_modules ./package-lock.json && npm install && npm run dev",
-    "build:packagr": "npm run build @themartiangeeks/securities && npm run build @themartiangeeks/utilities"
+    "build:packagr": "npm run build @themartiangeeks/securities && npm run build @themartiangeeks/utilities",
+    "update:patch": "superman version:update -p && npm run versionning",
+    "update:minor": "superman version:update -i && npm run versionning",
+    "update:version": "superman version:update -m && npm run versionning"
   },
   "husky": {
     "hooks": {
@@ -29,7 +32,9 @@
     "@angular/forms": "~7.2.0",
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
+    "@angular/pwa": "^0.12.4",
     "@angular/router": "~7.2.0",
+    "@angular/service-worker": "~7.2.0",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
